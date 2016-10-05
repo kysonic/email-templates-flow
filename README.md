@@ -15,8 +15,8 @@ You have possibility to add new pages in your flow. To make this:
 1. Add new template in src folder. e.g. my_new_page.hbs
 2. Go to the gulpfile.js and add following lines in array of pages: 
 
-```
-{name:'my_new_page',data:{info: 'Some string'}}
-```
+  ```
+  {name:'my_new_page',data:{info: 'Some string'}}
+  ```
 3. Reboot gulp 
 
