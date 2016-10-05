@@ -1,0 +1,21 @@
+{{#> layout }}
+    <table style="border-spacing: 0px;padding: 0;width: 100%;">
+        <tr>
+            <td style="background-color: #39C0C8">
+                <p style="text-align: center; font-size: 30px; font-weight: bold; color: #F76B5D; margin: 15px auto; text-shadow: 1px 1px 0px white;">{{generalTitle}}</p>
+                <p style="margin-top: 10px; margin-bottom: 20px; text-align: center; color: #fff; padding: 10px;">{{generalInfo}}</p>
+            </td>
+        </tr>
+        <tr style="color: #8E8E8E;">
+            <td>
+                {{#each items}}
+                    <a href="{{link}}" target="_blank" style="display: inline-block; width: 49%; height: 91px;
+                                              text-decoration: none; color: #39C0C8; font-weight: bold; margin-top: 10px; margin-bottom: 10px;">
+                        <img style="display: inline-block; margin-left: 25px; width: 80px; height: 80px;" src="{{src}}" alt="{{text}}">
+                        <p style="display: inline-block; vertical-align: top; width: 221px; margin-top: 32px; margin-left: 10px; max-width: {{maxWidth}}px">{{text}}</p>
+                    </a>
+                {{/each}}
+            </td>
+        </tr>
+    </table>
+{{/layout}}
