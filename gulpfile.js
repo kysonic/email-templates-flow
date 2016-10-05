@@ -4,22 +4,24 @@ var rename = require('gulp-rename');
 var eventStream = require('event-stream');
 
 /**
- * Переменные лайоута
+ * Layout vars
  * @type {{title: string}}
  */
 var layoutData = {
-	title: 'Smart Gifts | Планируй новый год уже сегодня'
+	title: 'ETF | Emailing'
 }
 /**
- * Страницы
+ * Pages
  * @type {*[]}
  */
 var pages = [
 	{
 		name:'page',data: {
+								// Some data
 								generalTitle:'Hello World!',
 								generalInfo: 'Accerso alius sententia ut mihi, phasmatis of interregnum ego dico, solvo meus mens mei, ' +
 								'ego dico phasmatis audite meus placitum meus mens quod iacio (Nombre de la persona)',
+								// Lists
 								items: [
 									{
 										src: '../images/logo.jpg',
@@ -49,7 +51,7 @@ var pages = [
 	}
 ];
 /**
- * Опции транспиллера
+ * Transpiler options
  * @type {{ignorePartials: boolean, batch: string[], helpers: {capitals: Function}}}
  */
 var options = {
@@ -57,8 +59,8 @@ var options = {
 	batch : ['./src'],
 	helpers : {
 		/**
-		 * Пример функции хэлпера для хандлбара
-		 * @param str - строка к которой был применен хэлпер
+		 * Example of helper
+		 * @param str - helper was applied to this string
 		 * @returns {string}
 		 */
 		capitals : function(str){
